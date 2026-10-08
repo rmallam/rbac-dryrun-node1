@@ -1,0 +1,36 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: rbac-dryrun-node1
+  description: RBAC dry run
+  tags:
+    - nodejs
+    - golden-path
+    - jenkins
+    - helm
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: rmallam/rbac-dryrun-node1
+    jenkins.io/job-full-name: demo/rbac-dryrun-node1
+    sonarqube.org/project-key: rbac-dryrun-node1
+    argocd/app-name: rbac-dryrun-node1
+    argocd/app-namespace: openshift-gitops
+    backstage.io/kubernetes-id: rbac-dryrun-node1
+    backstage.io/kubernetes-namespace: demo-dev
+    vault.io/secrets-path: rhdh
+    jira/project-key: DEMO
+    jira/component: rbac-dryrun-node1
+    snyk.io/org-id: stub-org
+    snyk.io/org-name: stub-org
+    snyk.io/project-ids: stub
+    servicenow.com/entity-id: demo
+    jfrog-artifactory/image-name: rbac-dryrun-node1
+    dynatrace.com/dynatrace-entity-id: SERVICE-DEMO
+    acme.io/devfile-path: devfile.yaml
+    acme.io/helm-chart: chart
+    acme.io/devspaces-url: https://devspaces.apps.rosa.rosa-89s85.bhg0.p3.openshiftapps.com
+    acme.io/devspaces-factory-url: https://devspaces.apps.rosa.rosa-89s85.bhg0.p3.openshiftapps.com#https://github.com/rmallam/rbac-dryrun-node1?new&devfilePath=devfile.yaml
+spec:
+  type: service
+  lifecycle: experimental
+  owner: user:default/guest

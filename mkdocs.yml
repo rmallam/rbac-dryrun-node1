@@ -1,0 +1,3 @@
+site_name: 'rbac-dryrun-node1'
+nav:
+  - Home: index.md
